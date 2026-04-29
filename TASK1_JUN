@@ -1,0 +1,19 @@
+// Junior Task 1: Basic API Request
+
+
+const baseUrl = `https://jsonplaceholder.typicode.com`
+const usersUrl = `${baseUrl}/users`
+//не знаю может можно было и укоротить - но наверное так лучше 
+// чем хардкодить все на один url 
+
+async function getUsers() {
+    const response = await fetch(usersUrl)
+    const data = await response.json()
+    console.log(`Total users: ${data.length}`)
+    console.log(`First user: ${data[0].name}`)
+}
+
+getUsers().catch(console.error)
+// я уже не убирала catch - у меня почему то не отображался резалт  в
+// в консоли и я нашла метод который помоет увидеть в чем дело. но я по итогу настроила 
+// tsx browser запустила и на эту команду оно вывело в косольку :)
