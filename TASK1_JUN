@@ -5,7 +5,7 @@ const baseUrl = `https://jsonplaceholder.typicode.com`
 const usersUrl = `${baseUrl}/users`
 //не знаю может можно было и укоротить - но наверное так лучше 
 // чем хардкодить все на один url 
-
+//MENTOR COMMENT: it's absolutely correct to not hardcode, and we'll have a separate part for Git and security best practices, so I will show you how it's better to store the variables 
 async function getUsers() {
     const response = await fetch(usersUrl)
     const data = await response.json()
@@ -17,3 +17,7 @@ getUsers().catch(console.error)
 // я уже не убирала catch - у меня почему то не отображался резалт  в
 // в консоли и я нашла метод который помоет увидеть в чем дело. но я по итогу настроила 
 // tsx browser запустила и на эту команду оно вывело в косольку :)
+
+/*MENTOR COMMENT: Well Done! The Task1 for Junior is accepted as all the criteria met :)
+Solid for a junior level
+However there are some options to improve your code, adding error handling for fetch() function, provide some typization for the const data, to care if the array data[] is empty.*/
