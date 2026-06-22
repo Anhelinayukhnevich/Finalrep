@@ -1,0 +1,26 @@
+{
+  "name": "finalrep",
+  "version": "1.0.0",
+  "description": "Repository for automation task from my mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anhelinayukhnevich/Finalrep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Anhelinayukhnevich/Finalrep/issues"
+  },
+  "homepage": "https://github.com/Anhelinayukhnevich/Finalrep#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  }
+}

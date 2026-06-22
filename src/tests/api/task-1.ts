@@ -19,7 +19,7 @@ async function getUsers() {
         return
     }
     console.log(`Total users: ${data.length}`)
-    console.log(`First user: ${data[0].name}`)
+    console.log(`First user: ${data[0]?.name}`)
 }
 
 getUsers().catch(console.error)
