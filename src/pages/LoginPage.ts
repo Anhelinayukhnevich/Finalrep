@@ -1,11 +1,17 @@
 import type { Page } from '@playwright/test';
 
+const baseUrl = process.env.BASE_URL!;
+
 export class LoginPage {
 
     constructor(private page: Page) {}
 
+    getPage() {
+        return this.page;
+    }
+
     async open() {
-        await this.page.goto('https://www.saucedemo.com/');
+        await this.page.goto(baseUrl);
     }
 
     async login(username: string, password: string) {

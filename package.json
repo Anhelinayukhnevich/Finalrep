@@ -20,7 +20,10 @@
   "homepage": "https://github.com/Anhelinayukhnevich/Finalrep#readme",
   "devDependencies": {
     "@playwright/test": "^1.61.0",
-    "@types/node": "^25.9.3",
+    "@types/node": "^25.9.4",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }
