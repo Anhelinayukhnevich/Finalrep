@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { test, expect } from '@playwright/test'; 
-import { LoginPage } from '../../pages/LoginPage.js'; 
+import { LoginPage } from '../../pages/LoginPage.js';
 
 test ('Login to SauceDemo using environment variables', async ({ page }) => {
     const username = process.env.TEST_USERNAME!;
