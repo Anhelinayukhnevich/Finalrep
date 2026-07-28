@@ -1,0 +1,12 @@
+export const usersMockData = [
+  {
+    "id": 1,
+    "name": "Mock User",
+    "email": "mock@test.com"
+  }
+]
+
+
+
+
+
